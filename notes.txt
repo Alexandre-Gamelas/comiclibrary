@@ -1,0 +1,12 @@
+api: 871a206577ce22e75964fba2c7a20ff1d1502020
+
+api docs:
+https://comicvine.gamespot.com/api/documentation
+Example:
+https://comicvine.gamespot.com/api/volumes/?api_key=YOUR-KEY&format=json&sort=name:asc&filter=name:Walking%20Dead
+Examples Page:
+https://comicvine.gamespot.com/forums/api-developers-2334/simple-example-s-for-using-the-apis-1885345/?page=1
+
+Character Search
+Series Search
+Publisher Search
