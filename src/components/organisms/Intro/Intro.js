@@ -3,20 +3,20 @@ import {Hotspot} from '../../molecules/'
 
 function Intro() {
   return (
-    <div className="row justify-content-center align-items-center mt-5 pt-5 pb-5">
+    <section className="row justify-content-center mt-5 pt-5 pb-5">
       <Hotspot
-        text = "Mauris fermentum, elit id gravida ultrices, massa augue commodo lacus, vitae ornare est lorem quis lectus. Quisque metus nibh, gravida eu bibendum et, condimentum eu mauris. Aenean pharetra ut lectus et viverra. Curabitur in efficitur elit. Aenean non nunc eget nulla imperdiet rutrum. Praesent rhoncus, diam nec malesuada aliquet, metus lacus sodales urna, sit amet tempor lectus arcu non odio. Morbi ac porta neque. Donec vitae hendrerit magna."
+        text = "Welcome to Gamelas' library! This is a costum built comic book repo where you can find all the info on your favourite coloured strips and beyond! Feel free to explore and have a good time!"
         icon = {{name: "fa-book-open", color: "#28a745"}}
       />
       <Hotspot
-        text = "Mauris fermentum, elit id gravida ultrices, massa augue commodo lacus, vitae ornare est lorem quis lectus. Quisque metus nibh, gravida eu bibendum et, condimentum eu mauris. Aenean pharetra ut lectus et viverra. Curabitur in efficitur elit. Aenean non nunc eget nulla imperdiet rutrum. Praesent rhoncus, diam nec malesuada aliquet, metus lacus sodales urna, sit amet tempor lectus arcu non odio. Morbi ac porta neque. Donec vitae hendrerit magna."
+        text = "You can use this app to search for characters in detail and find out all about them in a simple and intuative way. You can also check in daily for a random character bellow! Maybe you will find a new favourite!"
         icon = {{name:"fa-user", color: "#28a745"}}
       />
       <Hotspot
-        text = "Mauris fermentum, elit id gravida ultrices, massa augue commodo lacus, vitae ornare est lorem quis lectus. Quisque metus nibh, gravida eu bibendum et, condimentum eu mauris. Aenean pharetra ut lectus et viverra. Curabitur in efficitur elit. Aenean non nunc eget nulla imperdiet rutrum. Praesent rhoncus, diam nec malesuada aliquet, metus lacus sodales urna, sit amet tempor lectus arcu non odio. Morbi ac porta neque. Donec vitae hendrerit magna."
+        text = {["This app is built using functional components and hooks. It follows an ", <a href='https://bradfrost.com/blog/post/atomic-web-design/' target='blank'>atomic design</a>,". Components that need request logic are encapsulated in containers that take care of said logic. Also uses the context API, styled components and axios. Last but not least this is the first time I use git without a GUI"]}
         icon = {{name: "fa-question", color: "#28a745"}}
       />
-    </div>
+    </section>
 
 
   )
