@@ -1,16 +1,17 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 /*organismos*/
 import { Navbar } from './components/organisms'
 import { Intro } from './components/organisms'
-
+import {Daily} from './components/organisms'
 
 function App() {
   return (
-    <Fragment>
+    <main className="container-fluid">
       <Navbar />
       <Intro />
-    </Fragment>
+      <Daily />
+    </main>
   );
 }
 
