@@ -1,13 +1,21 @@
 import React from 'react'
 
 function Character(props) {
-  const { id, name } = props.character
+  const { id, name, image, birth, origin, deck } = props.character
+  const { nameO } = origin
+  const { icon_url, small_url, medium_url, screen_url } = image
+
   return (
-    <div>
-      <article className="col-12">
-        <h4>{name}, id: {id}</h4>
+    <section className="row pl-5 pt-4 animated fadeIn">
+      <article className="col-3">
+        <img src={small_url} alt="" className="img-fluid" />
       </article>
-    </div>
+      <article className="col-6">
+        <h2>{name}</h2>
+        <p>{birth}</p>
+        <p>{deck}</p>
+      </article>
+    </section>
   )
 }
 

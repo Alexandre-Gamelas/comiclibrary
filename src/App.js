@@ -3,7 +3,7 @@ import React from 'react';
 /*organismos*/
 import { Navbar } from './components/organisms'
 import { Intro } from './components/organisms'
-import {DailyContainer} from './containers/'
+import { DailyContainer } from './containers/'
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Navbar />
       <Intro />
       <DailyContainer />
+      <div className="mt-5 pt-5"></div>
     </main>
   );
 }
