@@ -8,7 +8,7 @@ function DailyContainer() {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    const path = "https://cors-anywhere.herokuapp.com/https://comicvine.gamespot.com/api/characters/?api_key=871a206577ce22e75964fba2c7a20ff1d1502020&format=json&field_list=name,id,image,count_of_issue_appearances,deck,origin,birth&filter=id:1443"
+    const path = "https://cors-anywhere.herokuapp.com/https://comicvine.gamespot.com/api/characters/?api_key=871a206577ce22e75964fba2c7a20ff1d1502020&format=json&field_list=name,image,count_of_issue_appearances,deck,origin,birth,publisher,first_appeared_in_issue&filter=id:1443"
     setLoading(true)
     axios.get(path)
       .then(function (response) {

@@ -3,7 +3,7 @@ import { Hotspot } from '../../molecules/'
 
 function Intro() {
   return (
-    <section className="row justify-content-center mt-5 pt-5">
+    <section className="row justify-content-center mt-5 mb-5 pb-5 pt-5">
       <Hotspot icon={{ name: "fa-book-open", color: "#28a745" }}>
         Welcome to Gamelas' library! This is a costum built comic book repo where you can find all the info on your favourite coloured strips and beyond! Feel free to explore and have a good time!
       </Hotspot>
