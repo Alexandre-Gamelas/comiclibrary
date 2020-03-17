@@ -4,7 +4,7 @@ import styled from 'styled-components'
 function TitleA(props) {
   const text = props.children
   return (
-    <article className="col-12 mb-4">
+    <article className="col-12 mb-4 pl-0">
       <H1WithStyles className="pl-2 mb-0">{text}</H1WithStyles>
     </article>
   )
