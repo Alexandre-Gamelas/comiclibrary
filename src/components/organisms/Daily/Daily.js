@@ -1,11 +1,10 @@
 import React from 'react'
+import {TitleA} from '../../atoms'
 
 function Daily() {
   return (
-    <section className="row">
-        <article className="col-10 pl-5">
-          <h1>Daily</h1>
-        </article>
+    <section className="row mt-5">
+      <TitleA>Daily</TitleA>       
     </section>
   )
 }

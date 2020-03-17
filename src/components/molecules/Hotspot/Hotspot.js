@@ -4,9 +4,11 @@ import styled from 'styled-components'
 import { Icon } from '../../atoms/'
 
 function Hotspot(props) {
-  const { icon, text } = props
+  const { icon } = props
+  const text = props.children
+
   return (
-    <div className="col-lg-4 col-md-4 col-12 text-center p-5 mb-4 mb-md-0">
+    <div className="col-lg-4 col-md-4 col-12 text-center pt-5 pl-5 pr-5 pb-0 mb-4 mb-md-0">
       <DivWithStyles className="card pt-4 p-5">
         <p className="mb-0">
           <Icon detail={icon}/>
@@ -18,11 +20,7 @@ function Hotspot(props) {
 }
 
 Hotspot.propTypes = {
-  icon: PropTypes.object,
-  text: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array
-  ])
+  icon: PropTypes.object
 }
 
 const DivWithStyles = styled.div`
