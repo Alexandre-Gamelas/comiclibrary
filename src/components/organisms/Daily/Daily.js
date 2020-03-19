@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react'
 import { TitleA, Loading } from '../../atoms'
 import { Character } from '../../molecules'
+import { Issue } from '../../molecules'
 
 function Daily(props) {
-  const { character, loading } = props
+  const { character, issue, loading } = props
 
   return (
     <Fragment>
@@ -13,8 +14,11 @@ function Daily(props) {
       {loading &&
         <Loading />
       }
-      {character &&
-        <Character character={character} />
+      {character, issue &&
+        <div className="row pt-4 animated fadeIn">
+          <Character character={character} />
+          <Issue issue={issue} />
+        </div>
       }
     </Fragment>
 
