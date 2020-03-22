@@ -50,6 +50,8 @@ function DailyContainer() {
   useEffect(() => {
     if (character)
       getIssue()
+
+    //eslint-disable-next-line
   }, [character])
 
   return (

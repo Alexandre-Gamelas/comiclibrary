@@ -14,7 +14,10 @@ function Daily(props) {
       {loading &&
         <Loading />
       }
-      {character, issue &&
+
+      {
+        // eslint-disable-next-line 
+        character, issue &&
         <div className="row pt-4 animated fadeIn">
           <Character character={character} />
           <Issue issue={issue} />
